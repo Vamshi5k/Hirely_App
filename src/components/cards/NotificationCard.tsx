@@ -1,14 +1,9 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import {
-  Briefcase,
-  CheckCircle2,
-  XCircle,
-  Bell,
-} from 'lucide-react-native';
+import { Briefcase, CheckCircle2, XCircle, Bell } from 'lucide-react-native';
 import { Notification } from '../../types/Notification-Type';
 import { Colors } from '../../theme/colors';
-
+import { Fonts } from '../../theme/typography';
 
 const NotificationCard = ({ item }: { item: Notification }) => {
   const iconMap = {
@@ -60,8 +55,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   title: {
-    fontSize: 14,
-    fontWeight: '600',
+    fontSize: 12,
+    fontFamily: Fonts.bold,
     color: Colors.dark,
     marginBottom: 2,
   },
@@ -69,6 +64,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: Colors.mediumGray,
     lineHeight: 16,
+    fontFamily: Fonts.regular,
   },
   timeRow: {
     flexDirection: 'row',
@@ -79,7 +75,7 @@ const styles = StyleSheet.create({
   },
   time: {
     fontSize: 9,
-    fontWeight: '500',
+    fontFamily: Fonts.bold,
     color: Colors.lightGray,
   },
   dot: {

@@ -221,7 +221,7 @@ const PersonalInformation = () => {
 
                 <Input
                   label="Phone Number"
-                  placeholder="+1 (555) 000-0000"
+                  placeholder="+91 7XXXXXXX1707"
                   icon={Phone}
                   value={values.phone}
                   onChangeText={handleChange('phone')}

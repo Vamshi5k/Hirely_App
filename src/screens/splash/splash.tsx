@@ -1,5 +1,10 @@
 import React, { useEffect, useRef } from 'react';
-import { StyleSheet, Image, Animated } from 'react-native';
+import {
+  StyleSheet,
+  Animated,
+  StatusBar,
+  Platform,
+} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 import { Colors } from '../../theme/colors';
@@ -7,7 +12,6 @@ import { Logo } from '../../utlis/Images';
 
 const SplashScreen = () => {
   const navigation = useNavigation<any>();
-
   const fadeAnim = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
@@ -26,6 +30,12 @@ const SplashScreen = () => {
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor={Colors.primaryDark}
+        translucent={Platform.OS === 'android'}
+      />
+
       <Animated.Image
         source={Logo}
         style={[styles.logo, { opacity: fadeAnim }]}

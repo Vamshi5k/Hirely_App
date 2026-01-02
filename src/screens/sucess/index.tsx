@@ -46,7 +46,7 @@ const Success = ({ navigation }: any) => {
   };
 
   const goToAppliedJobs = () => {
-    navigation.navigate('AppliedJob');
+    navigation.navigate('AppliedJobs');
   };
 
 
