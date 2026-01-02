@@ -12,7 +12,7 @@ function App() {
     <SafeAreaProvider>
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor="transparent"
+        backgroundColor={Colors.background}
         translucent
       />
 

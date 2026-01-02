@@ -15,7 +15,7 @@ export const useProfile = () => {
 
   const logout = () => {
     console.log('Logout pressed');
-    navigation.navigate('Onboarding');
+    navigation.navigate('Welcome');
     CustomToast('Logout SuccessFully !!');
   };
 

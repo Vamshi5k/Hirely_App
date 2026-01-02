@@ -30,7 +30,6 @@ const ProfileScreen = () => {
       setLoading(true);
       setLogoutVisible(false);
 
-      // ⏳ force 2 seconds loader
       await new Promise<void>(resolve => {
         setTimeout(() => resolve(), 2000);
       });

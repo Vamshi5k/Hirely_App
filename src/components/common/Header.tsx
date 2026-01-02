@@ -1,9 +1,10 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Fonts } from '../../theme/typography';
 import { Colors } from '../../theme/colors';
 import { MaleIcon } from '../../utlis/Images';
+import { useNavigation } from '@react-navigation/native';
 
 const getGreeting = () => {
   const hour = new Date().getHours();
@@ -21,6 +22,7 @@ const getFormattedDate = () => {
 };
 
 const Header = () => {
+  const navigation = useNavigation<any>();
   return (
     <View style={styles.container}>
       <View>
@@ -32,9 +34,9 @@ const Header = () => {
         </Text>
       </View>
 
-      <View style={styles.avatarWrapper}>
+      <TouchableOpacity activeOpacity={0.95} style={styles.avatarWrapper} onPress={() => navigation.navigate('Profile')}>
         <Image source={MaleIcon} style={styles.avatarIcon} />
-      </View>
+      </TouchableOpacity>
     </View>
   );
 };

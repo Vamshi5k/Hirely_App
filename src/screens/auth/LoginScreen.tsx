@@ -46,7 +46,7 @@ const Login = () => {
 
   const handleForgotPassword = () => {
     console.log('Navigate to forgot password');
-    navigation.navigate("Forgot-Password")
+    navigation.navigate("ForgotPassword")
   };
 
   const handleRegister = () => {
