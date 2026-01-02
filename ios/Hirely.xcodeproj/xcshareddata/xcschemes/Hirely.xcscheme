@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "WatchStore.app"
-               BlueprintName = "WatchStore"
-               ReferencedContainer = "container:WatchStore.xcodeproj">
+               BuildableName = "Hirely.app"
+               BlueprintName = "Hirely"
+               ReferencedContainer = "container:Hirely.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "WatchStoreTests.xctest"
-               BlueprintName = "WatchStoreTests"
-               ReferencedContainer = "container:WatchStore.xcodeproj">
+               BuildableName = "HirelyTests.xctest"
+               BlueprintName = "HirelyTests"
+               ReferencedContainer = "container:Hirely.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "WatchStore.app"
-            BlueprintName = "WatchStore"
-            ReferencedContainer = "container:WatchStore.xcodeproj">
+            BuildableName = "Hirely.app"
+            BlueprintName = "Hirely"
+            ReferencedContainer = "container:Hirely.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "WatchStore.app"
-            BlueprintName = "WatchStore"
-            ReferencedContainer = "container:WatchStore.xcodeproj">
+            BuildableName = "Hirely.app"
+            BlueprintName = "Hirely"
+            ReferencedContainer = "container:Hirely.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

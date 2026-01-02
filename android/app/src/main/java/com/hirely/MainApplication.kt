@@ -1,4 +1,4 @@
-package com.watchstore
+package com.hirely
 
 import android.app.Application
 import com.facebook.react.PackageList
